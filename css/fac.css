@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+.ocultar {
+    display: none;
+}
+ 
+.mostrar {
+    display: block;
+}
+
+
+#contenedor {
+	
+	background: linear-gradient(to bottom, white, #CCC);
+	width:450px;
+	margin:auto;
+	padding-top:25px;
+	
+
+	font-size:12px;
+	
+	text-align:left;
+	font-family:Verdana, Geneva, sans-serif;
+	padding-left:40px;
+	padding-right:40px;
+	padding-bottom:30px;
+	border: groove thin;
+	border-radius:15px;
+}
+
+
+#banner {
+	
+	width:450px;
+	height:50px;
+	margin:auto;
+}
+
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 200;
+    font-size: 15px;
+    color: #ffffff;
+    background-color:#183992;
+	border-color:#183992;
+  
+  }
+  
+  
+  #gracias{
+	  margin:auto;
+	  width:700px;
+	  text-align:center;
+	  padding:150px;
+	  
+}
+
+
+#tapa {
+	float:inherit;
+	
+}
+  
+	  

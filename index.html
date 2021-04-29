@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<LINK REL=StyleSheet HREF="fac.css" TYPE="text/css" MEDIA=screen>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<title>Facturacion</title>
+</head>
+
+<body  background="pat2.jpg">
+
+
+<div id="contenedor" align="center">
+<div id="banner"><img src="banner.png" /></div>
+
+  <br />  <br />  <br />  <br />  <br />  <br />
+
+
+<font size="+1">¡Gracias por tu compra!</font> <br/><br/>En caso de requerir factura por favor complete los siguientes campos y pulse en <strong>"Validar"</strong><br/>
+<br/><br/>
+
+
+<form id="contact-form" class="contact" name="contact-form" method="post" action="enviar2.php">
+    
+    
+    
+  <div class="form-group">
+     <label for="persona">Venta#:</label><br />
+        <input type="text"  id="venta2" class="form-control" name="venta" size="57"  style="height:25px" required>
+        <br />
+            </div>   
+    
+    
+   <div id="msg5">
+   
+   <!-- Mensajes de Verificación -->
+<div id="error5" class="alert alert-danger ocultar" role="alert">
+   <font color="#FF0000"> No has escrito el # de venta</font>
+    </div>
+<div id="ok5" class="alert alert-success ocultar" role="alert">
+<font color="#33CC00" ><strong>Has escrito un # de venta</strong></font>
+</div>
+
+</div> 
+            
+     <br />
+     
+     
+     <p><strong>Datos Fiscales</strong></p><br />
+    
+    <div class="form-group">
+     <label for="persona">Razon Social</label><br />
+        <input type="text"  id="razon" class="form-control" name="social" size="57"  style="height:25px" required>
+        <br />
+            </div>
+    
+   
+   
+   
+   
+   
+    <div id="msg4">
+   
+   <!-- Mensajes de Verificación -->
+<div id="error4" class="alert alert-danger ocultar" role="alert">
+   <font color="#FF0000"> No has escrito la Razón Social</font>
+    </div>
+<div id="ok4" class="alert alert-success ocultar" role="alert">
+<font color="#33CC00" ><strong>Has escrito una Razón Social</strong></font>
+</div>
+
+</div> 
+          
+    
+    
+    
+  
+  
+    <br />
+    <div class="form-group"  >
+        <label for="solorfc">RFC</label><br />
+        <input type="text" class="form-control" id="pass1" size="57" style="height:25px"  required>
+    </div>
+    
+    <br />
+    <div class="form-group">
+        <label for="conrfc">Confirmar RFC</label> <br />
+     <input type="text" class="form-control" id="pass2"  name="clave"  style="height:25px" size="57"  required >
+    </div>
+ 
+   <div id="msg">
+   
+   <!-- Mensajes de Verificación -->
+<div id="error" class="alert alert-danger ocultar" role="alert">
+    <font color="#FF0000">El RFC no coincide, vuelve a intentar</font>
+</div>
+<div id="ok" class="alert alert-success ocultar" role="alert">
+<font color="#33CC00"><strong>El RFC coincide</strong></font>
+    
+</div>
+<!-- Fin Mensajes de Verificación -->
+</div>
+   
+    <br />
+    
+   
+   
+   <div class="form-group">
+     <label for="domic">Domicilio Fiscal</label><br />
+        <input type="text"  id="domi2" class="form-control"  name="domi" style="height:25px" size="57" required>
+        </div> 
+        
+     
+  
+      <div id="msg3">
+   
+   <!-- Mensajes de Verificación -->
+<div id="error3" class="alert alert-danger ocultar" role="alert">
+   <font color="#FF0000"> No has escrito un domicilio fiscal</font>
+    </div>
+<div id="ok3" class="alert alert-success ocultar" role="alert">
+<font color="#33CC00" ><strong>Has escrito un domicilio válido</strong></font>
+</div>
+
+</div> 
+  <br />       
+     
+        <p><strong>CFDI:</strong></p>
+
+<div>
+  <input type="radio" id="gastos" name="cfdi" value="G03 Gastos en General"
+         checked>
+  <label for="G03 Gastos en General">G03 Gastos en General</label>
+</div>
+
+<div>
+  <input type="radio" id="merca" name="cfdi" value="G01 Adquisición de Mercancías">
+  <label for="G01 Adquisición de Mercancías">G01 Adquisición de Mercancías</label>
+</div>
+
+
+
+<div>
+  <input type="radio" id="comp" name="cfdi" value="I04 Equipo de Cómputo y Accesorios">
+  <label for="I04 Equipo de Cómputo y Accesorios">I04 Equipo de Cómputo y Accesorios</label>
+</div>
+
+
+<p><strong>Método de Pago:</strong></p>
+
+
+<div>
+  <input type="radio" id="Efectivo" name="metodo" value="Efectivo"
+         checked>
+  <label for="Efectivo">Efectivo</label>
+</div>
+
+<div>
+  <input type="radio" id="Deposito" name="metodo" value="Deposito">
+  <label for="Deposito">Depósito</label>
+</div>
+
+<div>
+  <input type="radio" id="Transferencia Bancaria" name="metodo" value="Transferencia Bancaria">
+  <label for="Transferencia Bancaria">Transferencia Bancaria</label>
+</div>
+
+
+<div>
+  <input type="radio" id="Tarjeta de Crédito/Débito" name="metodo" value="Tarjeta de Crédito/Débito">
+  <label for="Tarjeta de Crédito/Débito">Tarjeta de Crédito/Débito</label>
+</div>
+
+<br/>
+
+<p><strong>Correo Electrónico:</strong></p>
+
+
+
+ <div class="form-group">
+        <label for="correo1">Correo Electronico</label><br />
+        <input type= "email" class="form-control" id="correo1" size="57" style="height:25px" required>
+    </div>
+    
+    <br />
+    <div class="form-group">
+        <label for="correo2">Confirmar Correo Electronico</label> <br />
+      <input type="email" class="form-control" id="correo2" name="mail" size="57" style="height:25px"  required>
+    </div>
+ 
+   <div id="msg2">
+   
+   <!-- Mensajes de Verificación -->
+<div id="error2" class="alert alert-danger ocultar" role="alert">
+   <font color="#FF0000"> Las direcciones de correo electrónico no coinciden</font>
+    </div>
+<div id="ok2" class="alert alert-success ocultar" role="alert">
+<font color="#33CC00" ><strong>El correo electrónico coincide</strong></font>
+</div>
+
+</div>
+<!-- Fin Mensajes de Verificación -->
+
+
+<br/>
+<br/>
+
+
+
+ <div id="btnenviar" class="alert alert-danger ocultar" role="alert" align="left">
+ <button type="submit" class="boton" value="send" id="Enviar">Enviar</button>
+ 
+<font size="+1" ><img src="ok.png" /> Listo! Ya puedes enviar tu datos</font>
+ 
+ </div>
+<br />
+<button type="button" class="boton"  id="validar" onclick="verificarPasswords()">Validar</button>
+
+</form>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+</body>
+
+<script src="formu.js"></script>
+
+</html>
